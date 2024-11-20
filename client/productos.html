@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Disponibles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #carrito {
+            position: fixed;
+            right: -300px;
+            top: 0;
+            width: 300px;
+            height: 100%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            transition: right 0.3s ease;
+        }
+        #carrito.open {
+            right: 0;
+        }
+        #carrito h3 {
+            margin-top: 0;
+        }
+        #carrito button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #historial {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Productos disponibles</h1>
+
+    <button id="toggleCarrito" style="position: fixed; top: 20px; right: 20px; padding: 10px 20px; background-color: #28a745; color: white; border: none; cursor: pointer;">Ver Carrito</button>
+
+    <button id="verHistorial" style="position: fixed; top: 70px; right: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">Ver Historial de Órdenes</button>
+
+    <div id="productosList"></div>
+
+    <div id="carrito">
+        <h3>Carrito de Compras</h3>
+        <div id="productosCarrito"></div>
+        <button id="generarOrden">Generar Orden</button>
+        <button id="limpiarCarrito">Limpiar carrito</button>
+        <button id="toggleCarritoClose">Cerrar Carrito</button>
+    </div>
+
+    <div id="historial">
+        <button id="cerrarHistorial" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">Cerrar Historial</button>
+        <h2>Historial de Órdenes</h2>
+        <div id="listaHistorial"></div>
+    </div>
+
+    <button id="cerrarSesion" onclick="cerrarSesion()" style="position: fixed; bottom: 20px; left: 20px; padding: 10px 20px; background-color: #dc3545; color: white; border: none; cursor: pointer;">Cerrar sesión</button>
+
+    <script src="js/productos.js"></script>
+</body>
+</html>

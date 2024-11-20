@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administración</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Agregar producto</h1>
+    <form id="agregarProductoForm">
+        <input type="text" id="nombre" placeholder="Nombre del producto" required>
+        <input type="text" id="descripcion" placeholder="Descripción" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="number" id="cantidad" placeholder="Cantidad" required>
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <h2>Lista de productos</h2>
+    <div id="productosList"></div>
+    <div id="formularioActualizar" style="display:none;">
+        <h2>Actualizar producto</h2>
+        <form id="actualizarProductoForm">
+            <input type="text" id="nombreUpdate" placeholder="Nombre del producto" required>
+            <input type="text" id="descripcionUpdate" placeholder="Descripción" required>
+            <input type="number" id="precioUpdate" placeholder="Precio" required>
+            <input type="number" id="cantidadUpdate" placeholder="Cantidad" required>
+            <button type="submit">Actualizar Producto</button>
+        </form>
+    </div>
+
+    <button id="cerrarSesion" onclick="cerrarSesion()"style="position: fixed; bottom: 20px; left: 20px; padding: 10px 20px; background-color: #dc3545; color: white; border: none; cursor: pointer; z-index: 100;">Cerrar sesión</button>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

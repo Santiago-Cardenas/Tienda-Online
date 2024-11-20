@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "fecha": "20/11/2024",
+    "productos": [
+      {
+        "nombre": "Smartphone",
+        "cantidad": 1,
+        "precio": 800,
+        "subtotal": 800
+      }
+    ],
+    "total": 800
+  },
+  {
+    "id": 2,
+    "fecha": "20/11/2024",
+    "productos": [
+      {
+        "nombre": "Smartphone",
+        "cantidad": 2,
+        "precio": 800,
+        "subtotal": 1600
+      }
+    ],
+    "total": 1600
+  }
+]
